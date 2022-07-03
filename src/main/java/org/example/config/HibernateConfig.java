@@ -6,8 +6,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class HibernateConfig {
-    static Session session;
-    static SessionFactory sessionFactory;
 
     public static SessionFactory buildSessionFactory() {
         final SessionFactory sessionFactory = new Configuration()

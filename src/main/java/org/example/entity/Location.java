@@ -13,8 +13,9 @@ public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String longitude;
-    private String latitude;
     private String region;
+    @Column(nullable = false)
     private String country;
+    @Column(nullable = false)
+    private String city;
 }
